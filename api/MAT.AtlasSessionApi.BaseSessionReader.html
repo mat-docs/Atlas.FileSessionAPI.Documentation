@@ -1,0 +1,1364 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseSessionReader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseSessionReader
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MAT.AtlasSessionApi.BaseSessionReader">
+  
+  
+  <h1 id="MAT_AtlasSessionApi_BaseSessionReader" data-uid="MAT.AtlasSessionApi.BaseSessionReader" class="text-break">Class BaseSessionReader
+  </h1>
+  <div class="markdown level0 summary"><p>This class is the skeleton for session reader and holds the information about session details, laps, periodic channels, 
+parameters along with rational and text conversions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseSessionReader</span></div>
+      <div class="level2"><a class="xref" href="MAT.AtlasSessionApi.FileSessionReader.html">FileSessionReader</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MAT.AtlasSessionApi.ISessionReader.html">ISessionReader</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MAT.AtlasSessionApi.html">MAT.AtlasSessionApi</a></h6>
+  <h6><strong>Assembly</strong>: MAT.AtlasSessionApi.dll</h6>
+  <h5 id="MAT_AtlasSessionApi_BaseSessionReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseSessionReader : ISessionReader, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_Channels_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Channels*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_Channels" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Channels">Channels</h4>
+  <div class="markdown level1 summary"><p>Collection of key/value pairs for the channels where key is defined as channel id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;uint, Channel&gt; Channels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt32</span>, <a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_Conversions_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Conversions*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_Conversions" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Conversions">Conversions</h4>
+  <div class="markdown level1 summary"><p>Collection of key/value pairs for the conversions where key is defined as conversion identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, Conversion&gt; Conversions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MAT.AtlasSessionApi.Conversion.html">Conversion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_EndTime_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.EndTime*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_EndTime" data-uid="MAT.AtlasSessionApi.BaseSessionReader.EndTime">EndTime</h4>
+  <div class="markdown level1 summary"><p>End time of the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long EndTime { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_Item_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Item*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_Item_System_Int32_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Get the specific lap based on the index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Lap this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Get the lap of the given index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Lap.html">Lap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_Laps_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Laps*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_Laps" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Laps">Laps</h4>
+  <div class="markdown level1 summary"><p>Collection of laps and their description like lap number, type and start/end time of lap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Lap&gt; Laps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="MAT.AtlasSessionApi.Lap.html">Lap</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_Parameters_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Parameters*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_Parameters" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of the parameters in the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Parameter&gt; Parameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_ParametersByIdentifier_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.ParametersByIdentifier*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_ParametersByIdentifier" data-uid="MAT.AtlasSessionApi.BaseSessionReader.ParametersByIdentifier">ParametersByIdentifier</h4>
+  <div class="markdown level1 summary"><p>Collection of key/value pairs for the parameters where key is defined as parameter identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, Parameter&gt; ParametersByIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_SessionDetail_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.SessionDetail*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_SessionDetail" data-uid="MAT.AtlasSessionApi.BaseSessionReader.SessionDetail">SessionDetail</h4>
+  <div class="markdown level1 summary"><p>Modify the session details. The new details will be saved in .sse file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISessionDetail SessionDetail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ISessionDetail.html">ISessionDetail</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_SessionItems_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.SessionItems*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_SessionItems" data-uid="MAT.AtlasSessionApi.BaseSessionReader.SessionItems">SessionItems</h4>
+  <div class="markdown level1 summary"><p>Collection of session details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, string&gt; SessionItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_StartTime_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.StartTime*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_StartTime" data-uid="MAT.AtlasSessionApi.BaseSessionReader.StartTime">StartTime</h4>
+  <div class="markdown level1 summary"><p>Start time of the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long StartTime { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_VirtualParameters_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.VirtualParameters*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_VirtualParameters" data-uid="MAT.AtlasSessionApi.BaseSessionReader.VirtualParameters">VirtualParameters</h4>
+  <div class="markdown level1 summary"><p>Collection of key/value pairs for the virtual parameters where key is defined as virtual parameter identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;VirtualParameter&gt; VirtualParameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="MAT.AtlasSessionApi.VirtualParameter.html">VirtualParameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_VirtualParametersByIdentifier_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.VirtualParametersByIdentifier*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_VirtualParametersByIdentifier" data-uid="MAT.AtlasSessionApi.BaseSessionReader.VirtualParametersByIdentifier">VirtualParametersByIdentifier</h4>
+  <div class="markdown level1 summary"><p>Collection of key/value pairs for the virtual parameters where key is defined as virtual parameter identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, VirtualParameter&gt; VirtualParametersByIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MAT.AtlasSessionApi.VirtualParameter.html">VirtualParameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddChannel_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddChannel*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddChannel_MAT_AtlasSessionApi_Channel_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddChannel(MAT.AtlasSessionApi.Channel)">AddChannel(Channel)</h4>
+  <div class="markdown level1 summary"><p>Add a new channel after reading from session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddChannel(Channel channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Channel object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Channle can not be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddFormulaConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddFormulaConversion*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddFormulaConversion_MAT_AtlasSessionApi_FormulaConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddFormulaConversion(MAT.AtlasSessionApi.FormulaConversion)">AddFormulaConversion(FormulaConversion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddFormulaConversion(FormulaConversion conversion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.FormulaConversion.html">FormulaConversion</a></td>
+        <td><span class="parametername">conversion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddLap_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddLap*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddLap_MAT_AtlasSessionApi_Lap_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddLap(MAT.AtlasSessionApi.Lap)">AddLap(Lap)</h4>
+  <div class="markdown level1 summary"><p>Add new lap after reading from session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddLap(Lap lap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Lap.html">Lap</a></td>
+        <td><span class="parametername">lap</span></td>
+        <td><p>Lap object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>if lap object is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddParameter_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddParameter_MAT_AtlasSessionApi_Parameter_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddParameter(MAT.AtlasSessionApi.Parameter)">AddParameter(Parameter)</h4>
+  <div class="markdown level1 summary"><p>Adds a new parameter parameter to the current session. One parameter can contain multiple channels i.e. there is a 
+channel id associated with each channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddParameter(Parameter parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a></td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>parameter object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddRationalConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddRationalConversion*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddRationalConversion_MAT_AtlasSessionApi_RationalConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddRationalConversion(MAT.AtlasSessionApi.RationalConversion)">AddRationalConversion(RationalConversion)</h4>
+  <div class="markdown level1 summary"><p>Add a new rational conversion after reading from session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddRationalConversion(RationalConversion conversion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.RationalConversion.html">RationalConversion</a></td>
+        <td><span class="parametername">conversion</span></td>
+        <td><p>Conversion object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Throw exception for below conditions.</p>
+<ol>
+<li>conversion or coefficient can not be null.</li>
+<li>conversion identifier can not be null.</li>
+<li>unit can not be null.</li>
+<li>format can not be null.</li>
+</ol>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Throw exception if conversion identifier is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddSessionDetail_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddSessionDetail*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddSessionDetail_System_String_System_String_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddSessionDetail(System.String,System.String)">AddSessionDetail(String, String)</h4>
+  <div class="markdown level1 summary"><p>Add session detail after reading from session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddSessionDetail(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Session detail name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Session detail value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Detail name can not be null or empty. Detail value can not be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddTableConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddTableConversion*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddTableConversion_MAT_AtlasSessionApi_TableConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddTableConversion(MAT.AtlasSessionApi.TableConversion)">AddTableConversion(TableConversion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddTableConversion(TableConversion conversion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.TableConversion.html">TableConversion</a></td>
+        <td><span class="parametername">conversion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddTextConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddTextConversion*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddTextConversion_MAT_AtlasSessionApi_TextConversion_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddTextConversion(MAT.AtlasSessionApi.TextConversion)">AddTextConversion(TextConversion)</h4>
+  <div class="markdown level1 summary"><p>Add a new text conversion after reading from session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddTextConversion(TextConversion conversion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.TextConversion.html">TextConversion</a></td>
+        <td><span class="parametername">conversion</span></td>
+        <td><p>Conversion object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Throw exception if input is as per below.</p>
+<ol>
+<li>conversion and lookup table can not be null.</li>
+<li>default value can not be null.</li>
+<li>conversion identifier can not be null.</li>
+<li>unit can not be null.</li>
+<li>format can not be null.</li>
+</ol>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Throw exception if conversion identifier is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_AddVirtualParameter_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddVirtualParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_AddVirtualParameter_MAT_AtlasSessionApi_VirtualParameter_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.AddVirtualParameter(MAT.AtlasSessionApi.VirtualParameter)">AddVirtualParameter(VirtualParameter)</h4>
+  <div class="markdown level1 summary"><p>Holds the virtual parameter information after reading from session file. The parameter information can be used to extract the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddVirtualParameter(VirtualParameter virtualParameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.VirtualParameter.html">VirtualParameter</a></td>
+        <td><span class="parametername">virtualParameter</span></td>
+        <td><p>virtual pararmeter object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_CloseSession_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.CloseSession*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_CloseSession" data-uid="MAT.AtlasSessionApi.BaseSessionReader.CloseSession">CloseSession()</h4>
+  <div class="markdown level1 summary"><p>Close the opened session file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void CloseSession()</code></pre>
+  </div>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_Dispose_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Dispose*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_Dispose" data-uid="MAT.AtlasSessionApi.BaseSessionReader.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Dispose()</code></pre>
+  </div>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetData_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetData_System_String_System_Int64_System_Int64_MAT_AtlasSessionApi_Frequency_System_Boolean_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData(System.String,System.Int64,System.Int64,MAT.AtlasSessionApi.Frequency,System.Boolean)">GetData(String, Int64, Int64, Frequency, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the merged parameter data for given interval. It will return the data for timestamp between start and end timestamp.
+Data can be interpolate and default interpolation is off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataPoint[] GetData(string identifier, long startTime, long endTime, Frequency frequency, bool interpolate = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Frequency.html">Frequency</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency object to fetch the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">interpolate</span></td>
+        <td><p>Flag to interpolate samples. Default is false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataPoint.html">DataPoint</a>[]</td>
+        <td><p>Sample value along with it&apos;s status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetData_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetData_System_String_System_Int64_System_Int64_MAT_AtlasSessionApi_Frequency_System_Double____System_UInt16____System_Int64____System_Boolean_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData(System.String,System.Int64,System.Int64,MAT.AtlasSessionApi.Frequency,System.Double[]@,System.UInt16[]@,System.Int64[]@,System.Boolean)">GetData(String, Int64, Int64, Frequency, out Double[], out UInt16[], out Int64[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the merged parameter data for given interval. It will return the data for timestamp between start and end timestamp.
+Data can be interpolate and default interpolation is off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void GetData(string identifier, long startTime, long endTime, Frequency frequency, out double[] values, out ushort[] statuses, out long[] timestamps, bool interpolate = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Frequency.html">Frequency</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency object to fetch the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">statuses</span></td>
+        <td><p>The statuses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span>[]</td>
+        <td><span class="parametername">timestamps</span></td>
+        <td><p>The timestamps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">interpolate</span></td>
+        <td><p>Flag to interpolate samples. Default is false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetData_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetData_System_String_System_UInt32_System_Int64_System_Int64_MAT_AtlasSessionApi_Frequency_System_Boolean_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData(System.String,System.UInt32,System.Int64,System.Int64,MAT.AtlasSessionApi.Frequency,System.Boolean)">GetData(String, UInt32, Int64, Int64, Frequency, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the parameter data for the given channel and interval. It will return the data for timestamp between start and end timestamp.
+Data can be interpolate and default interpolation is off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataPoint[] GetData(string identifier, uint channelId, long startTime, long endTime, Frequency frequency, bool interpolate = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Frequency.html">Frequency</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency object to fetch the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">interpolate</span></td>
+        <td><p>Flag to interpolate samples. Default is false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataPoint.html">DataPoint</a>[]</td>
+        <td><p>Sample value along with it&apos;s status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetData_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetData_System_String_System_UInt32_System_Int64_System_Int64_MAT_AtlasSessionApi_Frequency_System_Double____System_UInt16____System_Int64____System_Boolean_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetData(System.String,System.UInt32,System.Int64,System.Int64,MAT.AtlasSessionApi.Frequency,System.Double[]@,System.UInt16[]@,System.Int64[]@,System.Boolean)">GetData(String, UInt32, Int64, Int64, Frequency, out Double[], out UInt16[], out Int64[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the parameter data for the given channel and interval. It will return the data for timestamp between start and end timestamp.
+Data can be interpolate and default interpolation is off.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void GetData(string identifier, uint channelId, long startTime, long endTime, Frequency frequency, out double[] values, out ushort[] statuses, out long[] timestamps, bool interpolate = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Frequency.html">Frequency</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td><p>Frequency object to fetch the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">statuses</span></td>
+        <td><p>The statuses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span>[]</td>
+        <td><span class="parametername">timestamps</span></td>
+        <td><p>The timestamps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">interpolate</span></td>
+        <td><p>Flag to interpolate samples. Default is false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_System_String_System_Int64_System_Int64_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples(System.String,System.Int64,System.Int64)">GetSamples(String, Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>Gets the merged parameter samples for timestamp between start and end timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataPoint[] GetSamples(string identifier, long startTime, long endTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End timestamp for requested sample.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataPoint.html">DataPoint</a>[]</td>
+        <td><p>Sample value along with it&apos;s status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_System_String_System_Int64_System_Int64_System_Double____System_UInt16____System_Int64____" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples(System.String,System.Int64,System.Int64,System.Double[]@,System.UInt16[]@,System.Int64[]@)">GetSamples(String, Int64, Int64, out Double[], out UInt16[], out Int64[])</h4>
+  <div class="markdown level1 summary"><p>Gets the merged parameter samples for timestamp between start and end timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void GetSamples(string identifier, long startTime, long endTime, out double[] values, out ushort[] statuses, out long[] timestamps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>The start time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>The end time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">statuses</span></td>
+        <td><p>The statuses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span>[]</td>
+        <td><span class="parametername">timestamps</span></td>
+        <td><p>The timestamps.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_System_String_System_UInt32_System_Int64_System_Int64_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples(System.String,System.UInt32,System.Int64,System.Int64)">GetSamples(String, UInt32, Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>Gets the parameter samples for specific channel. It will return the data for timestamp between start and end timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataPoint[] GetSamples(string identifier, uint channelId, long startTime, long endTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End timestamp for requested sample.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataPoint.html">DataPoint</a>[]</td>
+        <td><p>Sample value along with it&apos;s status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionReader_GetSamples_System_String_System_UInt32_System_Int64_System_Int64_System_Double____System_UInt16____System_Int64____" data-uid="MAT.AtlasSessionApi.BaseSessionReader.GetSamples(System.String,System.UInt32,System.Int64,System.Int64,System.Double[]@,System.UInt16[]@,System.Int64[]@)">GetSamples(String, UInt32, Int64, Int64, out Double[], out UInt16[], out Int64[])</h4>
+  <div class="markdown level1 summary"><p>Gets the parameter samples for specific channel. It will return the data for timestamp between start and end timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void GetSamples(string identifier, uint channelId, long startTime, long endTime, out double[] values, out ushort[] statuses, out long[] timestamps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td><p>Channel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End timestamp for requested sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>The values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">statuses</span></td>
+        <td><p>The statuses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span>[]</td>
+        <td><span class="parametername">timestamps</span></td>
+        <td><p>The timestamps.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ISessionReader.html">ISessionReader</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

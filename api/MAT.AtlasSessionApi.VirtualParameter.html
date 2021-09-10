@@ -1,0 +1,676 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VirtualParameter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VirtualParameter
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MAT.AtlasSessionApi.VirtualParameter">
+  
+  
+  <h1 id="MAT_AtlasSessionApi_VirtualParameter" data-uid="MAT.AtlasSessionApi.VirtualParameter" class="text-break">Class VirtualParameter
+  </h1>
+  <div class="markdown level0 summary"><p>Holds the information about the virtual parameters. Virtual parameters may be combined using functions to give derived results. 
+The output of a Function can be manipulated and displayed in the same way as a Parameter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VirtualParameter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MAT.AtlasSessionApi.html">MAT.AtlasSessionApi</a></h6>
+  <h6><strong>Assembly</strong>: MAT.AtlasSessionApi.dll</h6>
+  <h5 id="MAT_AtlasSessionApi_VirtualParameter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VirtualParameter</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="MAT_AtlasSessionApi_VirtualParameter__ctor_" data-uid="MAT.AtlasSessionApi.VirtualParameter.#ctor*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_String__MAT_AtlasSessionApi_Range_MAT_AtlasSessionApi_Range_System_Double_" data-uid="MAT.AtlasSessionApi.VirtualParameter.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},MAT.AtlasSessionApi.Range,MAT.AtlasSessionApi.Range,System.Double)">VirtualParameter(String, String, String, String, String, String, IEnumerable&lt;String&gt;, Range, Range, Double)</h4>
+  <div class="markdown level1 summary"><p>A new instance of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualParameter(string identifier, string name, string description, string format, string formula, string conversionId, IEnumerable&lt;string&gt; subGroups, Range physicalRange, Range warningRange, double offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>Parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Parameter name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Parameter description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>format of the parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">formula</span></td>
+        <td><p>Formula for the calculation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">conversionId</span></td>
+        <td><p>Conversion identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">subGroups</span></td>
+        <td><p>List of sub groups.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Range.html">Range</a></td>
+        <td><span class="parametername">physicalRange</span></td>
+        <td><p>Upper and lower limit of the parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Range.html">Range</a></td>
+        <td><span class="parametername">warningRange</span></td>
+        <td><p>Upper and lower warning limit of the parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>Offset value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Exception for null input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Exception for empty input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_ConversionId_" data-uid="MAT.AtlasSessionApi.VirtualParameter.ConversionId*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_ConversionId" data-uid="MAT.AtlasSessionApi.VirtualParameter.ConversionId">ConversionId</h4>
+  <div class="markdown level1 summary"><p>Gets the conversion identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConversionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_Description_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Description*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_Description" data-uid="MAT.AtlasSessionApi.VirtualParameter.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets the parameter description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_Format_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Format*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_Format" data-uid="MAT.AtlasSessionApi.VirtualParameter.Format">Format</h4>
+  <div class="markdown level1 summary"><p>Gets the format of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Format { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_Formula_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Formula*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_Formula" data-uid="MAT.AtlasSessionApi.VirtualParameter.Formula">Formula</h4>
+  <div class="markdown level1 summary"><p>Gets the formula of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Formula { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_Identifier_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Identifier*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_Identifier" data-uid="MAT.AtlasSessionApi.VirtualParameter.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"><p>Gets the parameter identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Identifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_Name_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Name*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_Name" data-uid="MAT.AtlasSessionApi.VirtualParameter.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_Offset_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Offset*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_Offset" data-uid="MAT.AtlasSessionApi.VirtualParameter.Offset">Offset</h4>
+  <div class="markdown level1 summary"><p>Gets the offset value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Offset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_PhysicalRange_" data-uid="MAT.AtlasSessionApi.VirtualParameter.PhysicalRange*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_PhysicalRange" data-uid="MAT.AtlasSessionApi.VirtualParameter.PhysicalRange">PhysicalRange</h4>
+  <div class="markdown level1 summary"><p>Gets the physical range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range PhysicalRange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Range.html">Range</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_SubGroups_" data-uid="MAT.AtlasSessionApi.VirtualParameter.SubGroups*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_SubGroups" data-uid="MAT.AtlasSessionApi.VirtualParameter.SubGroups">SubGroups</h4>
+  <div class="markdown level1 summary"><p>Gets the sub groups of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; SubGroups { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_WarningRange_" data-uid="MAT.AtlasSessionApi.VirtualParameter.WarningRange*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_WarningRange" data-uid="MAT.AtlasSessionApi.VirtualParameter.WarningRange">WarningRange</h4>
+  <div class="markdown level1 summary"><p>Gets the warning range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range WarningRange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Range.html">Range</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_Equals_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Equals*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_Equals_System_Object_" data-uid="MAT.AtlasSessionApi.VirtualParameter.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_GetHashCode_" data-uid="MAT.AtlasSessionApi.VirtualParameter.GetHashCode*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_GetHashCode" data-uid="MAT.AtlasSessionApi.VirtualParameter.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_ToString_" data-uid="MAT.AtlasSessionApi.VirtualParameter.ToString*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_ToString" data-uid="MAT.AtlasSessionApi.VirtualParameter.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_op_Equality_" data-uid="MAT.AtlasSessionApi.VirtualParameter.op_Equality*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_op_Equality_MAT_AtlasSessionApi_VirtualParameter_MAT_AtlasSessionApi_VirtualParameter_" data-uid="MAT.AtlasSessionApi.VirtualParameter.op_Equality(MAT.AtlasSessionApi.VirtualParameter,MAT.AtlasSessionApi.VirtualParameter)">Equality(VirtualParameter, VirtualParameter)</h4>
+  <div class="markdown level1 summary"><p>Are two parameters equal?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(VirtualParameter left, VirtualParameter right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.VirtualParameter.html">VirtualParameter</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>parameter object 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.VirtualParameter.html">VirtualParameter</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>parameter object 2</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_VirtualParameter_op_Inequality_" data-uid="MAT.AtlasSessionApi.VirtualParameter.op_Inequality*"></a>
+  <h4 id="MAT_AtlasSessionApi_VirtualParameter_op_Inequality_MAT_AtlasSessionApi_VirtualParameter_MAT_AtlasSessionApi_VirtualParameter_" data-uid="MAT.AtlasSessionApi.VirtualParameter.op_Inequality(MAT.AtlasSessionApi.VirtualParameter,MAT.AtlasSessionApi.VirtualParameter)">Inequality(VirtualParameter, VirtualParameter)</h4>
+  <div class="markdown level1 summary"><p>Are two parameters unequal?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(VirtualParameter left, VirtualParameter right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.VirtualParameter.html">VirtualParameter</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>parameter object 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.VirtualParameter.html">VirtualParameter</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>parameter object 2</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

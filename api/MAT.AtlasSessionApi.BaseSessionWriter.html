@@ -1,0 +1,1200 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseSessionWriter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseSessionWriter
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MAT.AtlasSessionApi.BaseSessionWriter">
+  
+  
+  <h1 id="MAT_AtlasSessionApi_BaseSessionWriter" data-uid="MAT.AtlasSessionApi.BaseSessionWriter" class="text-break">Class BaseSessionWriter
+  </h1>
+  <div class="markdown level0 summary"><p>This class is the skeleton for session writer class and holds the information about session details, lap, periodic channels, 
+parameters along with rational and text conversions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseSessionWriter</span></div>
+      <div class="level2"><a class="xref" href="MAT.AtlasSessionApi.FileSessionWriter.html">FileSessionWriter</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MAT.AtlasSessionApi.ISessionWriter.html">ISessionWriter</a></div>
+    <div><a class="xref" href="MAT.AtlasSessionApi.ISessionBuilder.html">ISessionBuilder</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MAT.AtlasSessionApi.html">MAT.AtlasSessionApi</a></h6>
+  <h6><strong>Assembly</strong>: MAT.AtlasSessionApi.dll</h6>
+  <h5 id="MAT_AtlasSessionApi_BaseSessionWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseSessionWriter : ISessionWriter, ISessionBuilder, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_Channels_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Channels*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_Channels" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Channels">Channels</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of key/value pairs for the channels where key is defined as channel id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;uint, Channel&gt; Channels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.UInt32</span>, <a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_Committed_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Committed*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_Committed" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Committed">Committed</h4>
+  <div class="markdown level1 summary"><p>Gets the status of the commit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Committed { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_Conversions_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Conversions*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_Conversions" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Conversions">Conversions</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of key/value pairs for the conversions where key is defined as conversion identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, Conversion&gt; Conversions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MAT.AtlasSessionApi.Conversion.html">Conversion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_Groups_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Groups*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_Groups" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Groups">Groups</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of groups and subgroups of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;Group&gt; Groups { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="MAT.AtlasSessionApi.Group.html">Group</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_Laps_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Laps*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_Laps" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Laps">Laps</h4>
+  <div class="markdown level1 summary"><p>Gets the collection od the laps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;Lap&gt; Laps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="MAT.AtlasSessionApi.Lap.html">Lap</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_NextChannelNumber_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.NextChannelNumber*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_NextChannelNumber" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.NextChannelNumber">NextChannelNumber</h4>
+  <div class="markdown level1 summary"><p>Gets and increment next channel id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint NextChannelNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_Parameters_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Parameters*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_Parameters" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of parameters and their descriptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Parameter&gt; Parameters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_ParametersByIdentifier_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.ParametersByIdentifier*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_ParametersByIdentifier" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.ParametersByIdentifier">ParametersByIdentifier</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of key/value pairs for the parameters where key is defined as parameter identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, Parameter&gt; ParametersByIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_SessionItems_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.SessionItems*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_SessionItems" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.SessionItems">SessionItems</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of key/value pairs for the session details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, string&gt; SessionItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_AddChannel_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddChannel*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_AddChannel_MAT_AtlasSessionApi_Channel_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddChannel(MAT.AtlasSessionApi.Channel)">AddChannel(Channel)</h4>
+  <div class="markdown level1 summary"><p>Add a new channel into session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChannel(Channel channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>throw exception if channel is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>throw exception if channel is already added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_AddGroup_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddGroup*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_AddGroup_MAT_AtlasSessionApi_Group_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddGroup(MAT.AtlasSessionApi.Group)">AddGroup(Group)</h4>
+  <div class="markdown level1 summary"><p>Add a new group/sub group for parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGroup(Group group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Group.html">Group</a></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>throw exception group is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_AddLap_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddLap*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_AddLap_System_Int32_System_Int64_MAT_AtlasSessionApi_LapType_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddLap(System.Int32,System.Int64,MAT.AtlasSessionApi.LapType)">AddLap(Int32, Int64, LapType)</h4>
+  <div class="markdown level1 summary"><p>Add a new lap into session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void AddLap(int number, long time, LapType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">number</span></td>
+        <td><p>lap number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>lap timestamp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.LapType.html">LapType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>type of the lap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_AddParameter_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_AddParameter_MAT_AtlasSessionApi_Parameter_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddParameter(MAT.AtlasSessionApi.Parameter)">AddParameter(Parameter)</h4>
+  <div class="markdown level1 summary"><p>Add a new parameter into the session along with it&apos;s conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddParameter(Parameter parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a></td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>parameter object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>throw exception if validation is failed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_AddSessionDetails_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddSessionDetails*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_AddSessionDetails_System_String_System_String_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.AddSessionDetails(System.String,System.String)">AddSessionDetails(String, String)</h4>
+  <div class="markdown level1 summary"><p>Add a new session details into session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSessionDetails(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>detail name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>detail value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_BuildRationalParameter_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.BuildRationalParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_BuildRationalParameter_System_String_System_String_MAT_AtlasSessionApi_Range_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.BuildRationalParameter(System.String,System.String,MAT.AtlasSessionApi.Range)">BuildRationalParameter(String, String, Range)</h4>
+  <div class="markdown level1 summary"><p>Build the parameter with rational conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RationalParameterBuilder BuildRationalParameter(string group, string name, Range physicalRange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>conversion name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Range.html">Range</a></td>
+        <td><span class="parametername">physicalRange</span></td>
+        <td><p>physical range of the parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.RationalParameterBuilder.html">RationalParameterBuilder</a></td>
+        <td><p>rational parameter builder object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_BuildTextParameter_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.BuildTextParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_BuildTextParameter_System_String_System_String_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.BuildTextParameter(System.String,System.String)">BuildTextParameter(String, String)</h4>
+  <div class="markdown level1 summary"><p>Build the parameter with text conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextParameterBuilder BuildTextParameter(string group, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>parameter name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.TextParameterBuilder.html">TextParameterBuilder</a></td>
+        <td><p>text parameter builder object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_CloseSession_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.CloseSession*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_CloseSession_System_String_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.CloseSession(System.String)">CloseSession(String)</h4>
+  <div class="markdown level1 summary"><p>Close the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void CloseSession(string extension = &quot;ssn&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extension</span></td>
+        <td><p>Close the session with extension, default is ssn. Pass ssv for associated session.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_CommitParameters_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.CommitParameters*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_CommitParameters" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.CommitParameters">CommitParameters()</h4>
+  <div class="markdown level1 summary"><p>Commits the parameters and it&apos;s related information into the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void CommitParameters()</code></pre>
+  </div>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_Dispose_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Dispose*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_Dispose" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Dispose()</code></pre>
+  </div>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_DoWritePeriodicData_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.DoWritePeriodicData*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_DoWritePeriodicData_System_UInt32_System_Int64_System_Int32_System_Byte___" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.DoWritePeriodicData(System.UInt32,System.Int64,System.Int32,System.Byte[])">DoWritePeriodicData(UInt32, Int64, Int32, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Add the samples into the channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void DoWritePeriodicData(uint channelNumber, long timestamp, int count, byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">channelNumber</span></td>
+        <td><p>chanel id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>first sample timestamp.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>byte data array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicData_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicData*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicData_MAT_AtlasSessionApi_Channel_System_Int64_System_Int32_System_Byte___" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicData(MAT.AtlasSessionApi.Channel,System.Int64,System.Int32,System.Byte[])">WritePeriodicData(Channel, Int64, Int32, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Write the periodic channel data into session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicData(Channel channel, long timestamp, int count, byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>byte data array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Throw argument exception if not periodic channel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_MAT_AtlasSessionApi_Channel_System_Int64_System_Byte___System_Int32_MAT_AtlasSessionApi_ByteOrder_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues(MAT.AtlasSessionApi.Channel,System.Int64,System.Byte[],System.Int32,MAT.AtlasSessionApi.ByteOrder)">WritePeriodicValues(Channel, Int64, Byte[], Int32, ByteOrder)</h4>
+  <div class="markdown level1 summary"><p>Write the data into session for a given channel. The data can be passed as byte array along with first sample timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicValues(Channel channel, long timestamp, byte[] values, int count, ByteOrder byteOrder = ByteOrder.LittleEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>byte array of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ByteOrder.html">ByteOrder</a></td>
+        <td><span class="parametername">byteOrder</span></td>
+        <td><p>byte order for little/big endian. Default is little endian</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_MAT_AtlasSessionApi_Channel_System_Int64_System_Int16___System_Int32_MAT_AtlasSessionApi_ByteOrder_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues(MAT.AtlasSessionApi.Channel,System.Int64,System.Int16[],System.Int32,MAT.AtlasSessionApi.ByteOrder)">WritePeriodicValues(Channel, Int64, Int16[], Int32, ByteOrder)</h4>
+  <div class="markdown level1 summary"><p>Write the data into session for a given channel. The data can be passed as short array along with first sample timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicValues(Channel channel, long timestamp, short[] values, int count, ByteOrder byteOrder = ByteOrder.LittleEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>short array of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ByteOrder.html">ByteOrder</a></td>
+        <td><span class="parametername">byteOrder</span></td>
+        <td><p>byte order for little/big endian. Default is little endian</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_MAT_AtlasSessionApi_Channel_System_Int64_System_Int32___System_Int32_MAT_AtlasSessionApi_ByteOrder_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues(MAT.AtlasSessionApi.Channel,System.Int64,System.Int32[],System.Int32,MAT.AtlasSessionApi.ByteOrder)">WritePeriodicValues(Channel, Int64, Int32[], Int32, ByteOrder)</h4>
+  <div class="markdown level1 summary"><p>Write the data into session for a given channel. The data can be passed as integer array along with first sample timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicValues(Channel channel, long timestamp, int[] values, int count, ByteOrder byteOrder = ByteOrder.LittleEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>integer array of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ByteOrder.html">ByteOrder</a></td>
+        <td><span class="parametername">byteOrder</span></td>
+        <td><p>byte order for little/big endian. Default is little endian</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_MAT_AtlasSessionApi_Channel_System_Int64_System_SByte___System_Int32_MAT_AtlasSessionApi_ByteOrder_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues(MAT.AtlasSessionApi.Channel,System.Int64,System.SByte[],System.Int32,MAT.AtlasSessionApi.ByteOrder)">WritePeriodicValues(Channel, Int64, SByte[], Int32, ByteOrder)</h4>
+  <div class="markdown level1 summary"><p>Write the data into session for a given channel. The data can be passed as signed byte array along with first sample timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicValues(Channel channel, long timestamp, sbyte[] values, int count, ByteOrder byteOrder = ByteOrder.LittleEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.SByte</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>signed byte array of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ByteOrder.html">ByteOrder</a></td>
+        <td><span class="parametername">byteOrder</span></td>
+        <td><p>byte order for little/big endian. Default is little endian</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_MAT_AtlasSessionApi_Channel_System_Int64_System_Single___System_Int32_MAT_AtlasSessionApi_ByteOrder_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues(MAT.AtlasSessionApi.Channel,System.Int64,System.Single[],System.Int32,MAT.AtlasSessionApi.ByteOrder)">WritePeriodicValues(Channel, Int64, Single[], Int32, ByteOrder)</h4>
+  <div class="markdown level1 summary"><p>Write the data into session for a given channel. The data can be passed as float array along with first sample timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicValues(Channel channel, long timestamp, float[] values, int count, ByteOrder byteOrder = ByteOrder.LittleEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>float array of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ByteOrder.html">ByteOrder</a></td>
+        <td><span class="parametername">byteOrder</span></td>
+        <td><p>byte order for little/big endian. Default is little endian</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_MAT_AtlasSessionApi_Channel_System_Int64_System_UInt16___System_Int32_MAT_AtlasSessionApi_ByteOrder_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues(MAT.AtlasSessionApi.Channel,System.Int64,System.UInt16[],System.Int32,MAT.AtlasSessionApi.ByteOrder)">WritePeriodicValues(Channel, Int64, UInt16[], Int32, ByteOrder)</h4>
+  <div class="markdown level1 summary"><p>Write the data into session for a given channel. The data can be passed as unsigned short array along with first sample timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicValues(Channel channel, long timestamp, ushort[] values, int count, ByteOrder byteOrder = ByteOrder.LittleEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>unsigned short array of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ByteOrder.html">ByteOrder</a></td>
+        <td><span class="parametername">byteOrder</span></td>
+        <td><p>byte order for little/big endian. Default is little endian</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues*"></a>
+  <h4 id="MAT_AtlasSessionApi_BaseSessionWriter_WritePeriodicValues_MAT_AtlasSessionApi_Channel_System_Int64_System_UInt32___System_Int32_MAT_AtlasSessionApi_ByteOrder_" data-uid="MAT.AtlasSessionApi.BaseSessionWriter.WritePeriodicValues(MAT.AtlasSessionApi.Channel,System.Int64,System.UInt32[],System.Int32,MAT.AtlasSessionApi.ByteOrder)">WritePeriodicValues(Channel, Int64, UInt32[], Int32, ByteOrder)</h4>
+  <div class="markdown level1 summary"><p>Write the data into session for a given channel. The data can be passed as unsigned integer array along with first sample timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePeriodicValues(Channel channel, long timestamp, uint[] values, int count, ByteOrder byteOrder = ByteOrder.LittleEndian)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>channel object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>timestamp of first sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>unsigned integer array of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>sample count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ByteOrder.html">ByteOrder</a></td>
+        <td><span class="parametername">byteOrder</span></td>
+        <td><p>byte order for little/big endian. Default is little endian</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ISessionWriter.html">ISessionWriter</a>
+  </div>
+  <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ISessionBuilder.html">ISessionBuilder</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Channel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Channel
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MAT.AtlasSessionApi.Channel">
+  
+  
+  <h1 id="MAT_AtlasSessionApi_Channel" data-uid="MAT.AtlasSessionApi.Channel" class="text-break">Class Channel
+  </h1>
+  <div class="markdown level0 summary"><p>This class holds the information about periodic channel. The parameter that will log data at the given interval.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Channel</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MAT.AtlasSessionApi.html">MAT.AtlasSessionApi</a></h6>
+  <h6><strong>Assembly</strong>: MAT.AtlasSessionApi.dll</h6>
+  <h5 id="MAT_AtlasSessionApi_Channel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Channel</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="MAT_AtlasSessionApi_Channel__ctor_" data-uid="MAT.AtlasSessionApi.Channel.#ctor*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel__ctor_System_UInt32_System_Int64_MAT_AtlasSessionApi_DataSource_MAT_AtlasSessionApi_DataType_" data-uid="MAT.AtlasSessionApi.Channel.#ctor(System.UInt32,System.Int64,MAT.AtlasSessionApi.DataSource,MAT.AtlasSessionApi.DataType)">Channel(UInt32, Int64, DataSource, DataType)</h4>
+  <div class="markdown level1 summary"><p>Create new channel for given channel id, interval, data source and it&apos;s type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Channel(uint id, long interval, DataSource dataSource, DataType dataType = DataType.FloatingPoint32Bit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataSource.html">DataSource</a></td>
+        <td><span class="parametername">dataSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataType.html">DataType</a></td>
+        <td><span class="parametername">dataType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="MAT_AtlasSessionApi_Channel_DefaultDataType" data-uid="MAT.AtlasSessionApi.Channel.DefaultDataType">DefaultDataType</h4>
+  <div class="markdown level1 summary"><p>The default data type used for a channel unless otherwise specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const DataType DefaultDataType = DataType.FloatingPoint32Bit</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataType.html">DataType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="MAT_AtlasSessionApi_Channel_DataSource_" data-uid="MAT.AtlasSessionApi.Channel.DataSource*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_DataSource" data-uid="MAT.AtlasSessionApi.Channel.DataSource">DataSource</h4>
+  <div class="markdown level1 summary"><p>Gets the data source; Periodic or Row Data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataSource DataSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataSource.html">DataSource</a></td>
+        <td><p>Data source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_Channel_DataType_" data-uid="MAT.AtlasSessionApi.Channel.DataType*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_DataType" data-uid="MAT.AtlasSessionApi.Channel.DataType">DataType</h4>
+  <div class="markdown level1 summary"><p>Gets the data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataType DataType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.DataType.html">DataType</a></td>
+        <td><p>The data type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_Channel_Frequency_" data-uid="MAT.AtlasSessionApi.Channel.Frequency*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_Frequency" data-uid="MAT.AtlasSessionApi.Channel.Frequency">Frequency</h4>
+  <div class="markdown level1 summary"><p>Gets the sample frequency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Frequency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The sample frequency (Hz).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MAT_AtlasSessionApi_Channel_Frequency_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="MAT.AtlasSessionApi.Channel.html#MAT_AtlasSessionApi_Channel_Interval">Interval</a></div>
+  </div>
+  <a id="MAT_AtlasSessionApi_Channel_Id_" data-uid="MAT.AtlasSessionApi.Channel.Id*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_Id" data-uid="MAT.AtlasSessionApi.Channel.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the channel id id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>Channel id id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_Channel_Interval_" data-uid="MAT.AtlasSessionApi.Channel.Interval*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_Interval" data-uid="MAT.AtlasSessionApi.Channel.Interval">Interval</h4>
+  <div class="markdown level1 summary"><p>Gets the interval between samples (ns).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Interval { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The sample interval (ns); zero for Row Data channels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="MAT_AtlasSessionApi_Channel_Equals_" data-uid="MAT.AtlasSessionApi.Channel.Equals*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_Equals_System_Object_" data-uid="MAT.AtlasSessionApi.Channel.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <a id="MAT_AtlasSessionApi_Channel_GetHashCode_" data-uid="MAT.AtlasSessionApi.Channel.GetHashCode*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_GetHashCode" data-uid="MAT.AtlasSessionApi.Channel.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <a id="MAT_AtlasSessionApi_Channel_ToString_" data-uid="MAT.AtlasSessionApi.Channel.ToString*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_ToString" data-uid="MAT.AtlasSessionApi.Channel.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="MAT_AtlasSessionApi_Channel_op_Equality_" data-uid="MAT.AtlasSessionApi.Channel.op_Equality*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_op_Equality_MAT_AtlasSessionApi_Channel_MAT_AtlasSessionApi_Channel_" data-uid="MAT.AtlasSessionApi.Channel.op_Equality(MAT.AtlasSessionApi.Channel,MAT.AtlasSessionApi.Channel)">Equality(Channel, Channel)</h4>
+  <div class="markdown level1 summary"><p>Are two channels equal?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Channel left, Channel right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_Channel_op_Inequality_" data-uid="MAT.AtlasSessionApi.Channel.op_Inequality*"></a>
+  <h4 id="MAT_AtlasSessionApi_Channel_op_Inequality_MAT_AtlasSessionApi_Channel_MAT_AtlasSessionApi_Channel_" data-uid="MAT.AtlasSessionApi.Channel.op_Inequality(MAT.AtlasSessionApi.Channel,MAT.AtlasSessionApi.Channel)">Inequality(Channel, Channel)</h4>
+  <div class="markdown level1 summary"><p>Are two channels unequal?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Channel left, Channel right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

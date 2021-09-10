@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TextParameterBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TextParameterBuilder
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MAT.AtlasSessionApi.TextParameterBuilder">
+  
+  
+  <h1 id="MAT_AtlasSessionApi_TextParameterBuilder" data-uid="MAT.AtlasSessionApi.TextParameterBuilder" class="text-break">Class TextParameterBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Build the parameter which uses text conversion.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html">ParameterBuilder</a>&lt;<a class="xref" href="MAT.AtlasSessionApi.TextParameterBuilder.html">TextParameterBuilder</a>&gt;</div>
+    <div class="level2"><span class="xref">TextParameterBuilder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MAT.AtlasSessionApi.IChannelBuilder.html">IChannelBuilder</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_sessionBuilder">ParameterBuilder&lt;TextParameterBuilder&gt;.sessionBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_group">ParameterBuilder&lt;TextParameterBuilder&gt;.group</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_name">ParameterBuilder&lt;TextParameterBuilder&gt;.name</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_identifier">ParameterBuilder&lt;TextParameterBuilder&gt;.identifier</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_description">ParameterBuilder&lt;TextParameterBuilder&gt;.description</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_units">ParameterBuilder&lt;TextParameterBuilder&gt;.units</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_format">ParameterBuilder&lt;TextParameterBuilder&gt;.format</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_subGroups">ParameterBuilder&lt;TextParameterBuilder&gt;.subGroups</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_byteOrder">ParameterBuilder&lt;TextParameterBuilder&gt;.byteOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_physicalRange">ParameterBuilder&lt;TextParameterBuilder&gt;.physicalRange</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_warningRange">ParameterBuilder&lt;TextParameterBuilder&gt;.warningRange</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_operations">ParameterBuilder&lt;TextParameterBuilder&gt;.operations</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_Identifier_System_String_">ParameterBuilder&lt;TextParameterBuilder&gt;.Identifier(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_Description_System_String_">ParameterBuilder&lt;TextParameterBuilder&gt;.Description(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_Units_System_String_">ParameterBuilder&lt;TextParameterBuilder&gt;.Units(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_Format_System_String_">ParameterBuilder&lt;TextParameterBuilder&gt;.Format(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_SubGroups_System_Collections_Generic_List_System_String__">ParameterBuilder&lt;TextParameterBuilder&gt;.SubGroups(List&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_ByteOrder_MAT_AtlasSessionApi_ByteOrder_">ParameterBuilder&lt;TextParameterBuilder&gt;.ByteOrder(ByteOrder)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_PhysicalRange_MAT_AtlasSessionApi_Range_">ParameterBuilder&lt;TextParameterBuilder&gt;.PhysicalRange(Range)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_PhysicalRange_System_Double_System_Double_">ParameterBuilder&lt;TextParameterBuilder&gt;.PhysicalRange(Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_WarningRange_MAT_AtlasSessionApi_Range_">ParameterBuilder&lt;TextParameterBuilder&gt;.WarningRange(Range)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_WarningRange_System_Double_System_Double_">ParameterBuilder&lt;TextParameterBuilder&gt;.WarningRange(Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_Operations_MAT_AtlasSessionApi_ParameterOperations_">ParameterBuilder&lt;TextParameterBuilder&gt;.Operations(ParameterOperations)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_OnPeriodicChannel_MAT_AtlasSessionApi_Frequency_MAT_AtlasSessionApi_DataType_">ParameterBuilder&lt;TextParameterBuilder&gt;.OnPeriodicChannel(Frequency, DataType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_OnChannel_MAT_AtlasSessionApi_Channel_">ParameterBuilder&lt;TextParameterBuilder&gt;.OnChannel(Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_GetIdentifier">ParameterBuilder&lt;TextParameterBuilder&gt;.GetIdentifier()</a>
+    </div>
+    <div>
+      <a class="xref" href="MAT.AtlasSessionApi.ParameterBuilder-1.html#MAT_AtlasSessionApi_ParameterBuilder_1_GetWarningRange">ParameterBuilder&lt;TextParameterBuilder&gt;.GetWarningRange()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MAT.AtlasSessionApi.html">MAT.AtlasSessionApi</a></h6>
+  <h6><strong>Assembly</strong>: MAT.AtlasSessionApi.dll</h6>
+  <h5 id="MAT_AtlasSessionApi_TextParameterBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class TextParameterBuilder : ParameterBuilder&lt;TextParameterBuilder&gt;, IChannelBuilder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="MAT_AtlasSessionApi_TextParameterBuilder__ctor_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.#ctor*"></a>
+  <h4 id="MAT_AtlasSessionApi_TextParameterBuilder__ctor_MAT_AtlasSessionApi_ISessionBuilder_System_String_System_String_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.#ctor(MAT.AtlasSessionApi.ISessionBuilder,System.String,System.String)">TextParameterBuilder(ISessionBuilder, String, String)</h4>
+  <div class="markdown level1 summary"><p>Update the text parameter builder object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextParameterBuilder(ISessionBuilder sessionBuilder, string group, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.ISessionBuilder.html">ISessionBuilder</a></td>
+        <td><span class="parametername">sessionBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="MAT_AtlasSessionApi_TextParameterBuilder_AddLookup_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.AddLookup*"></a>
+  <h4 id="MAT_AtlasSessionApi_TextParameterBuilder_AddLookup_System_Double_System_String_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.AddLookup(System.Double,System.String)">AddLookup(Double, String)</h4>
+  <div class="markdown level1 summary"><p>Add lookup table for text conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextParameterBuilder AddLookup(double input, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.TextParameterBuilder.html">TextParameterBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_TextParameterBuilder_BuildParameter_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.BuildParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_TextParameterBuilder_BuildParameter_System_Collections_Generic_ICollection_MAT_AtlasSessionApi_Channel__" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.BuildParameter(System.Collections.Generic.ICollection{MAT.AtlasSessionApi.Channel})">BuildParameter(ICollection&lt;Channel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Parameter BuildParameter(ICollection&lt;Channel&gt; channels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="MAT.AtlasSessionApi.Channel.html">Channel</a>&gt;</td>
+        <td><span class="parametername">channels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MAT.AtlasSessionApi.ParameterBuilder&lt;MAT.AtlasSessionApi.TextParameterBuilder&gt;.BuildParameter(System.Collections.Generic.ICollection&lt;MAT.AtlasSessionApi.Channel&gt;)</span></div>
+  <a id="MAT_AtlasSessionApi_TextParameterBuilder_DefaultValue_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.DefaultValue*"></a>
+  <h4 id="MAT_AtlasSessionApi_TextParameterBuilder_DefaultValue_System_String_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.DefaultValue(System.String)">DefaultValue(String)</h4>
+  <div class="markdown level1 summary"><p>Update the default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextParameterBuilder DefaultValue(string defaultVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defaultVal</span></td>
+        <td><p>default value in lookup table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.TextParameterBuilder.html">TextParameterBuilder</a></td>
+        <td><p>text parameter builder object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>throw exception if default value is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_TextParameterBuilder_GetFormat_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.GetFormat*"></a>
+  <h4 id="MAT_AtlasSessionApi_TextParameterBuilder_GetFormat" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.GetFormat">GetFormat()</h4>
+  <div class="markdown level1 summary"><p>Gets the format of the conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetFormat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Get the format of text conversion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MAT.AtlasSessionApi.ParameterBuilder&lt;MAT.AtlasSessionApi.TextParameterBuilder&gt;.GetFormat()</span></div>
+  <a id="MAT_AtlasSessionApi_TextParameterBuilder_GetPhysicalRange_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.GetPhysicalRange*"></a>
+  <h4 id="MAT_AtlasSessionApi_TextParameterBuilder_GetPhysicalRange" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.GetPhysicalRange">GetPhysicalRange()</h4>
+  <div class="markdown level1 summary"><p>Gets the minimum and maximum value of the lookup table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Range GetPhysicalRange()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Range.html">Range</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MAT.AtlasSessionApi.ParameterBuilder&lt;MAT.AtlasSessionApi.TextParameterBuilder&gt;.GetPhysicalRange()</span></div>
+  <a id="MAT_AtlasSessionApi_TextParameterBuilder_LookupTable_" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.LookupTable*"></a>
+  <h4 id="MAT_AtlasSessionApi_TextParameterBuilder_LookupTable_System_Collections_Generic_IDictionary_System_Double_System_String__" data-uid="MAT.AtlasSessionApi.TextParameterBuilder.LookupTable(System.Collections.Generic.IDictionary{System.Double,System.String})">LookupTable(IDictionary&lt;Double, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Prepare the lookup table for text conversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextParameterBuilder LookupTable(IDictionary&lt;double, string&gt; lookupTable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.Double</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">lookupTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.TextParameterBuilder.html">TextParameterBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MAT.AtlasSessionApi.IChannelBuilder.html">IChannelBuilder</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

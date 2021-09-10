@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISessionBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISessionBuilder
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MAT.AtlasSessionApi.ISessionBuilder">
+  
+  
+  <h1 id="MAT_AtlasSessionApi_ISessionBuilder" data-uid="MAT.AtlasSessionApi.ISessionBuilder" class="text-break">Interface ISessionBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Interface class contains the signatures of properties and functions to build the text or rational parameter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MAT.AtlasSessionApi.html">MAT.AtlasSessionApi</a></h6>
+  <h6><strong>Assembly</strong>: MAT.AtlasSessionApi.dll</h6>
+  <h5 id="MAT_AtlasSessionApi_ISessionBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISessionBuilder</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="MAT_AtlasSessionApi_ISessionBuilder_Committed_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.Committed*"></a>
+  <h4 id="MAT_AtlasSessionApi_ISessionBuilder_Committed" data-uid="MAT.AtlasSessionApi.ISessionBuilder.Committed">Committed</h4>
+  <div class="markdown level1 summary"><p>Gets the status of parameter details committed into session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Committed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_ISessionBuilder_NextChannelNumber_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.NextChannelNumber*"></a>
+  <h4 id="MAT_AtlasSessionApi_ISessionBuilder_NextChannelNumber" data-uid="MAT.AtlasSessionApi.ISessionBuilder.NextChannelNumber">NextChannelNumber</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the channel number. It is automatically maintained while building the text and rational parameters. 
+User is allowed to change the channel number until and unless it&apos;s not overlapped with internal channel id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint NextChannelNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MAT_AtlasSessionApi_ISessionBuilder_NextChannelNumber_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre><code>using (ISessionWriter sessionWriter = new FileSessionWriter(&quot;C:\Test.ssn&quot;))
+{
+    const long sampleInterval = 100000000;
+    sessionWriter.NextChannelNumber = 1000;
+    var channel = new Channel(sessionWriter.NextChannelNumber, sampleInterval, AtlasSessionApi.DataSource.Periodic);
+    sessionWriter.BuildRationalParameter(&quot;TestGroup&quot;, &quot;Parameter&quot;, new Range(-100, 100.0))
+                   .OnChannel(channel)
+                   .AddToSession();
+    sessionWriter.CommitParameters();
+}</code></pre>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="MAT_AtlasSessionApi_ISessionBuilder_AddGroup_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.AddGroup*"></a>
+  <h4 id="MAT_AtlasSessionApi_ISessionBuilder_AddGroup_MAT_AtlasSessionApi_Group_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.AddGroup(MAT.AtlasSessionApi.Group)">AddGroup(Group)</h4>
+  <div class="markdown level1 summary"><p>Add the group/sub groups of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddGroup(Group group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Group.html">Group</a></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_ISessionBuilder_AddParameter_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.AddParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_ISessionBuilder_AddParameter_MAT_AtlasSessionApi_Parameter_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.AddParameter(MAT.AtlasSessionApi.Parameter)">AddParameter(Parameter)</h4>
+  <div class="markdown level1 summary"><p>Add the parameter into session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddParameter(Parameter parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Parameter.html">Parameter</a></td>
+        <td><span class="parametername">parameter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="MAT_AtlasSessionApi_ISessionBuilder_BuildRationalParameter_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.BuildRationalParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_ISessionBuilder_BuildRationalParameter_System_String_System_String_MAT_AtlasSessionApi_Range_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.BuildRationalParameter(System.String,System.String,MAT.AtlasSessionApi.Range)">BuildRationalParameter(String, String, Range)</h4>
+  <div class="markdown level1 summary"><p>Builds the text parameter with the given name and group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RationalParameterBuilder BuildRationalParameter(string group, string name, Range physicalRange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.Range.html">Range</a></td>
+        <td><span class="parametername">physicalRange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.RationalParameterBuilder.html">RationalParameterBuilder</a></td>
+        <td><p>Rational parameter builder object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MAT_AtlasSessionApi_ISessionBuilder_BuildRationalParameter_System_String_System_String_MAT_AtlasSessionApi_Range__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre><code>using (ISessionWriter sessionWriter = new FileSessionWriter(@&quot;C:\Test.ssn&quot;))
+{
+    var subGroups = new List<string></string> { &quot;SubGroup1&quot;, &quot;SubGroup2&quot; };
+    sessionWriter.BuildRationalParameter(&quot;TestGroup&quot;, &quot;Parameter&quot;, new Range(-100, 100.0))
+                   .Description(&quot;Description of Parameter&quot;)
+                   .SubGroups(subGroups)
+                   .Units(&quot;kph&quot;)
+                   .OnPeriodicChannel(Interval.Frequency(10))
+                   .AddToSession();
+    sessionWriter.CommitParameters();
+}</code></pre>
+</div>
+  <a id="MAT_AtlasSessionApi_ISessionBuilder_BuildTextParameter_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.BuildTextParameter*"></a>
+  <h4 id="MAT_AtlasSessionApi_ISessionBuilder_BuildTextParameter_System_String_System_String_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.BuildTextParameter(System.String,System.String)">BuildTextParameter(String, String)</h4>
+  <div class="markdown level1 summary"><p>Builds the text parameter with the given name and group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TextParameterBuilder BuildTextParameter(string group, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MAT.AtlasSessionApi.TextParameterBuilder.html">TextParameterBuilder</a></td>
+        <td><p>Text parameter builder object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MAT_AtlasSessionApi_ISessionBuilder_BuildTextParameter_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><pre><code>using (ISessionWriter sessionWriter1 = new FileSessionWriter(@&quot;C:\Test.ssn&quot;))
+{
+   var subGroups = new List<string></string> { &quot;SubGroup1&quot;, &quot;SubGroup2&quot; };
+   const long sampleInterval = 100000000;
+   sessionWriter1.BuildTextParameter(&quot;TestGroup&quot;, &quot;Parameter&quot;)
+            .AddLookup(1.0, &quot;One&quot;)
+            .AddLookup(2.0, &quot;Two&quot;)
+            .AddLookup(3.0, &quot;Three&quot;)
+            .AddLookup(4.0, &quot;Four&quot;)
+            .DefaultValue(&quot;One&quot;)
+            .PhysicalRange(new Range(1, 4))     // Optional: PhysicalRange will automatically calculated by lookup table.
+            .SubGroups(subGroups)
+            .Description(&quot;Description of Parameter&quot;)
+            .OnPeriodicChannel(sampleInterval, DataType.Unsigned8Bit)
+            .AddToSession();
+            sessionWriter1.CommitParameters();
+}</code></pre>
+</div>
+  <a id="MAT_AtlasSessionApi_ISessionBuilder_CommitParameters_" data-uid="MAT.AtlasSessionApi.ISessionBuilder.CommitParameters*"></a>
+  <h4 id="MAT_AtlasSessionApi_ISessionBuilder_CommitParameters" data-uid="MAT.AtlasSessionApi.ISessionBuilder.CommitParameters">CommitParameters()</h4>
+  <div class="markdown level1 summary"><p>Commits all the related details of the parameters into session. Once parameter is committed it can not be changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CommitParameters()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
